@@ -264,6 +264,7 @@ p {
 
 .match-card:hover {
     background-color: #222232;
+    transition: background-color 0.4s ease-in 0.007s;
 }
 
 .match-card:hover .match-name-live h4 {
