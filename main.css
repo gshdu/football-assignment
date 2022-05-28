@@ -2,7 +2,11 @@
         fonts
 -------------------- */
 
+/* poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
 
 /* -----------------------
@@ -204,4 +208,143 @@ p {
 .watch-match-img img {
     width: 567px;
     height: 467px;
+}
+
+
+/* ------------------------------------------
+        upcoming matches section
+------------------------------------------- */
+
+
+.upcoming-matches-container {
+    margin: 0 0 200px 50px;
+}
+
+.upcoming-matches-container h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.match-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    column-gap: 25px;
+}
+
+.match-cards a {
+    text-decoration: none;
+}
+
+.match-card {
+    /* position: relative; */
+    width: 300px;
+    padding: 23px 35px 15px 35px;
+    height: 150px;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px #00000020;
+}
+
+/* .match-card:hover .match-name-live h4,
+.match-name-live span,
+.match-schedule p,
+.club-1 p,
+.club-2 p {
+    color: #FFFFFF;
+} */
+
+/* .match-card:hover .match-card p,
+.match-card span,
+.match-card h4 {
+    color: white;
+} */
+
+.match-card:hover {
+    background-color: #222232;
+}
+
+.match-card:hover .match-name-live h4 {
+    color: #FFFFFF;
+}
+
+.match-card:hover .clubs-schedule p {
+    color: #FFFFFF;
+}
+
+.match-name-live {
+    /* position: absolute;
+    top: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.match-name-live h4 {
+    color: #0A0826;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.match-name-live span {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 12px;
+    background-color: rgb(255, 63, 88);
+    border-radius: 30px;
+    padding: 4px 20px 4px 20px;
+    margin: 0 2px 0 0;
+}
+
+.clubs-schedule {
+    /* position: absolute;
+    top: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clubs-schedule .match-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -15px 0 0 0;
+}
+
+.clubs-schedule .match-schedule p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.clubs-schedule .match-schedule .match-date {
+    color: brown;
+}
+
+.club-1,
+.club-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-card .club-1 img,
+.club-2 img {
+    width: 70px;
+    height: 70px;
+}
+
+.match-card .club-1 p,
+.club-2 p {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin: 10px 0 0 0;
 }
