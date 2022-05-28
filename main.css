@@ -342,12 +342,17 @@ p {
     top-scorers result history section styles
 ---------------------------------------------------- */
 
-
 .scorer-result-history-container {
     margin: 50px 50px 158px 50px;
 }
 
-.top-scorers-container {
+/* .scorer-result-history-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.common-container {
     width: 400px;
     padding: 0 20px 7px 20px;
     background-color: #EDECF9;
@@ -355,29 +360,34 @@ p {
     border-radius: 5px;
 }
 
-.top-scorers-container:hover {
+.common-container:hover {
     box-shadow: none;
 }
 
-.top-scorers-container .top-scorers-container-header {
+.scorer-result-history-container-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-.top-scorers-container .top-scorers-container-header h1 {
+.scorer-result-history-container-header h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color: #000000;
 }
 
-.top-scorers-container .top-scorers-container-header a {
+.scorer-result-history-container-header a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     color: #E02C6D;
     font-size: 15px;
     font-weight: 600;
 }
+
+
+/* -------------------------------------
+     top scorer section styles 
+--------------------------------------*/
 
 .top-scorers a {
     text-decoration: none;
@@ -416,13 +426,6 @@ p {
     align-items: flex-start;
 }
 
-/* .top-scorer .top-scorer-info h4,
-.top-scorer-info h6 {
-    position: absolute;
-    left: 0;
-    top: 0;
-} */
-
 .top-scorer .top-scorer-info h4 {
     margin: 0 0 7px 0;
     font-family: 'Roboto', sans-serif;
@@ -451,4 +454,102 @@ p {
     border-radius: 50%;
     padding: 50% 25%;
     margin: 0 0 0 0px;
+}
+
+
+/* --------------------------------
+        results section styles 
+---------------------------------*/
+
+.results-container {
+    width: 400px;
+    border: 1px solid blue;
+    padding: 0 20px 7px 20px;
+    border-radius: 5px;
+}
+
+.results a {
+    text-decoration: none;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(left, #2B2B3D 0%, #2B2B3D 88%, #222232 88%, #222232 100%);
+    margin: 0 0 15px 0;
+}
+
+.result:hover {
+    background: -webkit-linear-gradient(left, #E02C6D 0%, #E02C6D 88%, #be1c57 88%, #be1c57 100%);
+}
+
+.results .result .club-1-result,
+.club-2-result,
+.result-score {
+    display: flex;
+    align-items: center;
+}
+
+.results .result .club-1-result,
+.club-2-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.results .result .club-1-result-img,
+.club-2-result-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.results .result .club-1-result img,
+.club-2-result img {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    padding: 7px;
+    background-color: #222232;
+}
+
+.results .result .club-1-result span,
+.club-2-result span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.results .result .club-1-result span {
+    margin: 0 0 0 10px;
+}
+
+.results .result .club-2-result span {
+    margin: 0 10px 0 0;
+}
+
+.results .result .result-score {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #246BFD;
+    padding: 3px 10px 3px 10px;
+    border-radius: 20px;
+}
+
+.results .result .ht-ft {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 0 7px 0 0;
 }
