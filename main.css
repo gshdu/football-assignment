@@ -474,6 +474,7 @@ p {
 
 .result {
     display: flex;
+    /* flex: 1; */
     align-items: center;
     justify-content: space-between;
     height: 50px;
@@ -498,8 +499,16 @@ p {
 .club-2-result {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    /* margin: auto; */
+}
+
+.results .result .club-2-result {
+    justify-content: flex-end;
+    margin: 0 25px 0 0;
 }
 
 .results .result .club-1-result-img,
@@ -545,6 +554,7 @@ p {
     background-color: #246BFD;
     padding: 3px 10px 3px 10px;
     border-radius: 20px;
+    margin: 0 15px 0 0;
 }
 
 .results .result .ht-ft {
