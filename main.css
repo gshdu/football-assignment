@@ -161,7 +161,7 @@ body {
 ------------------------------------------- */
 
 .watch-match-container {
-    margin: 0 0 158px 0;
+    margin: 0 0 120px 0;
 }
 
 .watch-match {
@@ -669,4 +669,56 @@ p {
     bottom: 0;
     width: 230px;
     border-radius: 0 0 20px 0;
+}
+
+
+/* ------------------------------
+        footer area styles 
+-------------------------------*/
+
+.footer-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-area .footer-logo {
+    margin: 0 0 20px 0;
+}
+
+.footer-area .footer-logo img {
+    width: 483.87px;
+    height: 110px;
+}
+
+.footer-area .footer-social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+.footer-area .footer-social-icons img {
+    width: 32px;
+    height: 32px;
+    margin: 0 14px 0 0;
+}
+
+.footer-area .footer-copyright p {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.footer-area .footer-copyright p a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-area .footer-copyright p a:hover {
+    text-decoration: none;
+    color: #E02C6D;
 }
