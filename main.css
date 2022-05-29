@@ -46,7 +46,7 @@ body {
 }
 
 .watch-button:hover .button-arrow {
-    transform: translateX(8px);
+    transform: translateX(7px);
     transition: transform 0.4s ease-in-out 0.05s;
 }
 
@@ -81,6 +81,10 @@ body {
     line-height: 24px;
     font-weight: 500;
     margin: 0 36px 0 0;
+}
+
+.navigation-bar .nav-links a:hover {
+    color: #E02C6D;
 }
 
 .navigation-bar .login-link {
