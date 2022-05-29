@@ -889,9 +889,23 @@ p {
         overflow-x: hidden;
     }
 
-    .header-container {
+    /* .header-container {
+        display: none;
+    } */
+
+    .navigation-bar {
+        justify-content: space-evenly;
+    }
+
+    .navigation-bar .nav-links {
         display: none;
     }
+
+    .navigation-bar .login-link {
+        margin-right: -300px;
+    }
+
+
 
     .hero-container {
         width: 100%;
@@ -1097,6 +1111,10 @@ p {
     .watch-match-info {
         justify-content: normal;
         margin-bottom: 25px;
+    }
+
+    .watch-match-info .button-link {
+        margin: 0;
     }
 
     .match-cards {
