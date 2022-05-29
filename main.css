@@ -395,12 +395,6 @@ p {
     margin: 50px 50px 158px 50px;
 }
 
-/* .scorer-result-history-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
 .common-container {
     width: 350px;
     padding: 0 20px 7px 20px;
@@ -602,7 +596,6 @@ p {
     background-color: #246BFD;
     padding: 3px 10px 3px 10px;
     border-radius: 20px;
-    margin: 0 15px 0 0;
 }
 
 .results .result .ht-ft {
@@ -881,7 +874,11 @@ p {
     }
 
     .common-container {
-        width: 350px;
+        width: 300px;
+    }
+
+    .results .result .result-score {
+        margin: 0;
     }
 
     .history-post {
@@ -892,7 +889,7 @@ p {
 
     .history-post-title h3 {
         font-size: 30px;
-        line-height: 30px;
+        line-height: 25px;
     }
 
     .footer-area-container {
