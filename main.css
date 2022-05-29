@@ -703,6 +703,109 @@ p {
     border-radius: 0 0 20px 0;
 }
 
+/* --------------------------------
+         history tablet section styles
+-------------------------------- */
+
+.history-container-tablet {
+    width: 100%;
+}
+
+.history-posts-tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.history-post-tablet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 20px 0;
+    border-radius: 20px;
+    /* background-color: black; */
+    background: -webkit-linear-gradient(left, #2368F8 0%, #0C0C69 100%);
+}
+
+.history-post-tablet .history-post-details-tablet {
+    width: 50%;
+}
+
+.history-post-tablet .history-post-details-tablet a {
+    text-decoration: none;
+}
+
+.history-post-tablet .history-post-details-tablet .history-post-category-tablet .fa-futbol {
+    color: #E02C6D;
+    transition: color 0.2s ease-in 0.007s;
+}
+
+.history-post-tablet .history-post-details-tablet .history-post-category-tablet:hover {
+    background-color: #E02C6D;
+    transition: background-color 0.2s ease-in 0.007s;
+}
+
+.history-post-tablet .history-post-details-tablet .history-post-category-tablet:hover .fa-futbol {
+    color: #FFFFFF;
+    transition: color 0.2s ease-in 0.007s;
+}
+
+.history-post-tablet .history-post-details-tablet .history-post-category-tablet:hover h4 {
+    color: #FFFFFF;
+    transition: color 0.2s ease-in 0.007s;
+}
+
+.history-post-tablet .history-post-details-tablet .history-post-category-tablet {
+    width: 75px;
+    padding: 5px 10px 5px 10px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin: 0 0 0 5px;
+    transition: background-color 0.2s ease-in 0.007s;
+}
+
+.history-post-tablet .history-post-details-tablet .history-post-category-tablet h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #E02C6D;
+    font-size: 13px;
+    margin: 0;
+    transition: color 0.2s ease-in 0.007s;
+}
+
+.history-post-tablet .history-post-details-tablet .history-post-title-tablet a {
+    text-decoration: none;
+}
+
+.history-post-tablet .history-post-details-tablet .history-post-title-tablet h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    /* color: black; */
+    font-size: 18px;
+    margin: 15px -26px 15px 0;
+}
+
+.history-post-tablet .history-post-details-tablet .history-post-title-tablet h3:hover {
+    color: #E02C6D;
+}
+
+.history-post-tablet .history-post-details-tablet .history-post-date-tablet span {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    /* color: black; */
+    font-size: 12px;
+    margin: 0;
+}
+
+.history-post-tablet .history-post-thumb-tablet img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 230px;
+    border-radius: 0 0 20px 0;
+}
+
 
 /* ------------------------------
         footer area styles 
@@ -901,6 +1004,10 @@ p {
         /* margin-right: -100px; */
     }
 
+    .history-container-tablet {
+        display: none;
+    }
+
     .footer-area-container {
         margin-bottom: 50px;
     }
@@ -916,5 +1023,141 @@ p {
         width: 300px;
         height: 32px;
         text-align: center;
+    }
+
+}
+
+/* tablet devices */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .navigation-bar {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navigation-bar .nav-links {
+        margin: 0;
+    }
+
+    .navigation-bar .nav-links a {
+        margin: 0 20px 0 0;
+    }
+
+    .navigation-bar .login-link {
+        margin: 0;
+    }
+
+    .hero-container {
+        width: 100%;
+    }
+
+    .hero-section {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        justify-items: center;
+    }
+
+    .hero-img img {
+        width: 397.01px;
+        height: auto;
+        margin-left: 30px;
+    }
+
+    .hero-info .hero-title {
+        font-size: 45px;
+        width: 360px;
+        height: 251px;
+        margin: 0 0 20px 20px;
+
+    }
+
+    .button-link {
+        margin: 0 0 0 20px;
+        display: inline-block;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .watch-match {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .watch-match-info {
+        justify-content: normal;
+        margin-bottom: 25px;
+    }
+
+    .match-cards {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+        justify-items: center;
+    }
+
+    .scorer-result-history-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        justify-items: center;
+        margin-bottom: 20px;
+    }
+
+    .common-container {
+        width: 320px;
+    }
+
+    .history-container-tablet {
+        width: 100%;
+        margin: auto;
+    }
+
+    .history-container-tablet .history-posts-tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        justify-items: flex-start;
+    }
+
+    .history-section-tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    .history-container {
+        display: none;
+    }
+
+    /* .history-container-tablet .history-container {
+        width: 1000px;
+    } */
+
+    /* .history-post .history-post-details .history-post-title h3 {
+        margin: 0;
+    } */
+
+    .footer-area {
+        margin-top: 100px;
+    }
+
+}
+
+/* pc and laptops */
+
+@media only screen and (min-width: 992px) {
+    .history-container-tablet {
+        display: none;
     }
 }
