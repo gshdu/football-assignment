@@ -699,10 +699,26 @@ p {
     margin: 0 0 20px 0;
 }
 
-.footer-area .footer-social-icons img {
-    width: 32px;
-    height: 32px;
+.footer-area .footer-social-icons .footer-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-area .footer-social-icons .social-icon {
+    font-size: 17.07px;
+    color: #969BAB;
+    background-color: #E7E7E8;
+    padding: 14.93px;
+    border-radius: 50%;
+    /* background: #0B0D17;
+    opacity: 0.01; */
     margin: 0 14px 0 0;
+}
+
+.footer-area .footer-social-icons .social-icon:hover {
+    color: #FFFFFF;
+    background-color: #E02C6D;
 }
 
 .footer-area .footer-copyright p {
