@@ -552,7 +552,6 @@ p {
     align-content: center;
     flex-grow: 1;
     flex-basis: 0;
-    /* margin: auto; */
 }
 
 .results .result .club-2-result {
@@ -620,12 +619,6 @@ p {
 .history-container {
     width: 400px;
 }
-
-/* .history-posts{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 20px;
-} */
 
 .history-post {
     position: relative;
@@ -783,4 +776,135 @@ p {
 .footer-area .footer-copyright p a:hover {
     text-decoration: none;
     color: #E02C6D;
+}
+
+
+/* ------------------------
+        media query
+------------------------ */
+
+/* mobile devices */
+
+@media only screen and (max-width: 688px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .header-container {
+        display: none;
+    }
+
+    .hero-container {
+        width: 100%;
+        padding: 0 0 60px 0;
+    }
+
+    .hero-section {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .hero-info {
+        margin: 0 0 0 16px;
+    }
+
+    .hero-info .hero-title {
+        font-size: 36px;
+        line-height: 50px;
+        width: 278px;
+        height: 138px;
+    }
+
+    .hero-img img {
+        width: 329px;
+        height: 259.17px;
+        margin: 50px 0 0 15px;
+    }
+
+    .blogs-container {
+        width: 100%;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 24px;
+        justify-items: center;
+    }
+
+    .watch-match {
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .watch-match-info {
+        width: 329px;
+        height: 299px;
+        margin: 0 0 29px 15px;
+    }
+
+    .watch-match-info h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .watch-match-img {
+        margin: 0 0 0 16px;
+    }
+
+    .watch-match-img img {
+        width: 330px;
+        height: 248px;
+        margin: 0;
+    }
+
+    .match-cards {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 24px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .match-card {
+        width: 280px;
+    }
+
+    .scorer-result-history-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 35px;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 50px;
+    }
+
+    .common-container {
+        width: 350px;
+    }
+
+    .history-post {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 270px;
+    }
+
+    .history-post-title h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .footer-area-container {
+        margin-bottom: 50px;
+    }
+
+    .footer-logo img {
+        width: 10%;
+    }
+
+    .footer-area .footer-copyright p {
+        font-size: 18px;
+        line-height: 24px;
+        width: 300px;
+        height: 32px;
+        text-align: center;
+    }
 }
